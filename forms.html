@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Forms | Nhub Academy</title>
+
+    <link href="assets/vendor/bootstrap4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/master.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav id="sidebar" class="active">
+            <div class="sidebar-header">
+                <img src="assets/img/logo.png" alt="bootraper logo" class="app-logo">
+            </div>
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li>
+                    <a href="dashboard.html"><i class="fas fa-database"></i> Dashboard</a>
+                </li>
+                <li>
+                    <a href="forms.html"><i class="fas fa-file-alt"></i> Payment Form</a>
+                </li>
+                <li>
+                    <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+                </li>
+                
+                
+                <li>
+                    <a href="settings.html"><i class="fas fa-cog"></i>Settings</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="body" class="active">
+            <nav class="navbar navbar-expand-lg navbar-primary bg-primary">
+                <button type="button" id="sidebarCollapse" class="btn btn-outline-light default-light-menu"><i class="fas fa-bars"></i><span></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                        </li>
+                        <li class="nav-item dropdown">
+                            <div class="nav-dropdown">
+                                <a href="" class="nav-item nav-link " data-toggle="dropdown"><i class="fas fa-user"></i> <span> Github </span> <i style="font-size: .8em;" class="fas fa-caret-down"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right nav-link-menu">
+                                    <ul class="nav-list">
+                                        <li><a href="profile.html" class="dropdown-item"><i class="fas fa-address-card"></i> Profile</a></li>
+                                        <li><a href="" class="dropdown-item"><i class="fas fa-envelope"></i> Messages</a></li>
+                                        <li><a href="settings.html" class="dropdown-item"><i class="fas fa-cog"></i> Settings</a></li>
+                                        <div class="dropdown-divider"></div>
+                                        <li><a href="login.html" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="page-title">
+                        <h3>Form</h3>
+                    </div>
+                    <div class="row">
+                       
+                        <!-- <div class="col-lg-6 offset-3">
+                            <div class="card">
+                                <div class="card-header">Modal Form</div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Example popup signin form</h5>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Launch form</button>
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Signin Modal</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body text-left">
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                    <form accept-charset="utf-8">
+                                                        <div class="form-group">
+                                                            <label for="email">Email</label>
+                                                            <input type="email" name="email" placeholder="Email Address" class="form-control">
+                                                        </div>
+                                                        <div class="form-group">       
+                                                            <label for="password">Password</label>
+                                                            <input type="password" name="password" placeholder="Password" class="form-control">
+                                                        </div>
+                                                        <div class="form-group">       
+                                                            <button type="submit" class="btn btn-primary">Signin</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header">Form Validation</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Example form with inline field validations</h5>
+                                    <form class="needs-validation" novalidate accept-charset="utf-8">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="email">Email</label>
+                                                <input type="email" class="form-control" name="email" placeholder="Email" required>
+                                                <small class="form-text text-muted">Enter a valid email address.</small>
+                                                <div class="valid-feedback">Looks good!</div>
+                                                <div class="invalid-feedback">Please enter your email address.</div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="password">Password</label>
+                                                <input type="password" class="form-control" name="password" placeholder="Password" required>
+                                                <small class="form-text text-muted">Your password must be 8-20 characters long, contain letters and numbers only.</small>
+                                                <div class="valid-feedback">Looks good!</div>
+                                                <div class="invalid-feedback">Please enter your password.</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="address">Address</label>
+                                            <input type="text" class="form-control" name="address" placeholder="1234 Main St, Unit, Building, or Floor" required>
+                                            <div class="valid-feedback">Looks good!</div>
+                                            <div class="invalid-feedback">Please enter your address.</div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="city">City</label>
+                                                <input type="text" class="form-control" name="city" placeholder="City" required>
+                                                <div class="valid-feedback">Looks good!</div>
+                                                <div class="invalid-feedback">Please enter your City.</div>
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <label for="state">State</label>
+                                                <select name="state" class="form-control" required>
+                                                    <option value="" selected>Choose...</option>
+                                                    <option value="1">Plateau State</option>
+                                                    <option value="2">Abuja</option>
+                                                </select>
+                                                <div class="valid-feedback">Looks good!</div>
+                                                <div class="invalid-feedback">Please select a State.</div>
+                                            </div>
+                                            <div class="form-group col-md-2">
+                                                <label for="zip">Zip code</label>
+                                                <input type="text" class="form-control" name="zip" placeholder="00000" required>
+                                                <div class="valid-feedback">Looks good!</div>
+                                                <div class="invalid-feedback">Please enter a Zip code.</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="gridCheck" required>
+                                                <label class="form-check-label" for="gridCheck">Check me out</label>
+                                                <div class="invalid-feedback">You must agree before submitting.</div>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Save</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-primary ">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center text-white">
+                    <div class="py-4">
+                        <p>Powered by <img src="./assets/img/logo.png" alt=""> &copy; 2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/vendor/jquery3/jquery-3.4.1.min.js"></script>
+    <script src="assets/vendor/bootstrap4/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/fontawesome5/js/solid.min.js"></script>
+    <script src="assets/vendor/fontawesome5/js/fontawesome.min.js"></script>
+    <script src="assets/js/form-validator.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+.carousel-caption{
+    margin-bottom: 20%;
+}
+
+@media screen and (max-width: 545px){
+    .carousel-caption{
+        font-size: x-small;
+        margin-bottom: 10%;
+    }
+}

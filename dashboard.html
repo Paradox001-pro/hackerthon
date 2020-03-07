@@ -1,0 +1,183 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard | Nhub Acedemy</title>
+
+    <link href="assets/vendor/bootstrap4/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/vendor/fontawesome5/css/all.css">
+    <link href="assets/css/master.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="assets/vendor/chartsjs/Chart.min.css" rel="stylesheet">
+    <link href="assets/vendor/flagiconcss3/css/flag-icon.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav id="sidebar" class="active">
+            <div class="sidebar-header">
+                <img src="assets/img/logo.png" alt="bootraper logo" class="app-logo">
+            </div>
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li>
+                    <a href="dashboard.html"><i class="fas fa-database"></i> Dashboard</a>
+                </li>
+                <li>
+                    <a href="forms.html"><i class="fas fa-file-alt"></i> Payment Form</a>
+                </li>
+                <li>
+                    <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+                </li>
+                
+                
+                <li>
+                    <a href="settings.html"><i class="fas fa-cog"></i>Settings</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div id="body" class="active">
+            <nav class="navbar navbar-expand-lg navbar-primary bg-primary">
+                <button type="button" id="sidebarCollapse" class="btn btn-outline-light default-light-menu"><i
+                        class="fas fa-bars"></i><span></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <div class="nav-dropdown">
+                                <a href="" class="nav-item nav-link " data-toggle="dropdown"><i class="fas fa-user"></i> <span> Github </span> <i style="font-size: .8em;" class="fas fa-caret-down"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right nav-link-menu">
+                                    <ul class="nav-list">
+                                        <li><a href="profile.html" class="dropdown-item"><i class="fas fa-address-card"></i> Profile</a></li>
+                                        <li><a href="" class="dropdown-item"><i class="fas fa-envelope"></i> Messages</a></li>
+                                        <li><a href="settings.html" class="dropdown-item"><i class="fas fa-cog"></i> Settings</a></li>
+                                        <div class="dropdown-divider"></div>
+                                        <li><a href="login.html" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div id="card" class="container pt-5">
+                <div  class="row">
+                    <div class="col-md-4 text-center">
+                        <div class="card bg-success text-white">
+                            <div class="card-body">
+                                Profile <span><i class="fa fa-user"></i></span>
+                            </div>
+                            <div class="card-footer "><a href="">View all <span><i
+                                            class="fa fa-arrow-circle-right"></i></span></a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="card bg-primary text-white">
+                            <div class="card-body">
+                                Course Registration <span><i class="fa fa-plus"></i></span>
+                            </div>
+                            <div class="card-footer "><a href="">View all <span><i
+                                            class="fa fa-arrow-circle-right"></i></span></a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="card bg-danger text-white">
+                            <div class="card-body">
+                                Generate Fee <span><i class="fa fa-th-list"></i></span>
+                            </div>
+                            <div class="card-footer "><a href="">View all <span><i
+                                            class="fa fa-arrow-circle-right"></i></span></a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="card bg-primary text-white">
+                            <div class="card-body">
+                                Check Result <span><i class="fa fa-eye"></i></span>
+                            </div>
+                            <div class="card-footer "><a href="">View all <span><i
+                                            class="fa fa-arrow-circle-right"></i></span></a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="card bg-danger text-white">
+                            <div class="card-body">
+                                My Schedule <span><i class="fa fa-table"></i></span>
+                            </div>
+                            <div class="card-footer "><a href="">View all <span><i
+                                            class="fa fa-arrow-circle-right"></i></span></a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="card bg-success text-white">
+                            <div class="card-body">
+                                Payment Details <span><i class="fa fa-money-bill"></i></span>
+                            </div>
+                            <div class="card-footer "><a href="">View all <span><i
+                                            class="fa fa-arrow-circle-right"></i></span></a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="card bg-danger text-white">
+                            <div class="card-body">
+                                My Calendar <span><i class="fa fa-calendar-week"></i></span>
+                            </div>
+                            <div class="card-footer "><a href="">View all <span><i
+                                            class="fa fa-arrow-circle-right"></i></span></a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="card bg-success text-white">
+                            <div class="card-body">
+                                Course Timetable <span><i class="fa fa-calendar-check"></i></span>
+                            </div>
+                            <div class="card-footer "><a href="">View all <span><i
+                                            class="fa fa-arrow-circle-right"></i></span></a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="card bg-primary text-white">
+                            <div class="card-body">
+                                Exam Timetable <span><i class="fa fa-calendar"></i></span>
+                            </div>
+                            <div class="card-footer "><a href="">View all <span><i
+                                            class="fa fa-arrow-circle-right"></i></span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class="bg-primary ">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center text-white">
+                    <div class="py-4">
+                        <p>Powered by <img src="./assets/img/logo.png" alt=""> &copy; 2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/vendor/jquery3/jquery-3.4.1.min.js"></script>
+    <script src="assets/vendor/bootstrap4/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/fontawesome5/js/solid.min.js"></script>
+    <script src="assets/vendor/fontawesome5/js/fontawesome.min.js"></script>
+    <script src="assets/vendor/chartsjs/Chart.min.js"></script>
+    <script src="assets/js/dashboard-charts.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
